@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- connect css  -->
+		<link href="/dist/output.css" rel="stylesheet" />
+		<!-- connect ionicons -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!-- connect swiper js -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+		<!-- connect aos -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+
+	<body class="bg-black text-white">
+		<!--------------------------- Navbar  -------------------------------->
+		<nav class="p-5 bg-[#4C3D9F] shadow md:flex md:items-center md:justify-between" id="home">
+			<div class="flex justify-between items-center">
+				<span class="text-2xl font-[Poppins] cursor-pointer ml-10"> SHEILA </span>
+
+				<span class="text-3xl cursor-pointer mx-2 md:hidden block">
+					<ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+				</span>
+			</div>
+			<ul
+				class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-[#4C3D9F] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+			>
+				<li class="mx-4 my-6 md:my-0">
+					<a href="#home" class="text-lg hover:text-cyan-500 duration-500">Home</a>
+				</li>
+				<li class="mx-4 my-6 md:my-0">
+					<a href="#about" class="text-lg hover:text-cyan-500 duration-500">About Me</a>
+				</li>
+				<li class="mx-4 my-6 md:my-0">
+					<a href="#skills" class="text-lg hover:text-cyan-500 duration-500">Skills</a>
+				</li>
+				<li class="mx-4 my-6 md:my-0">
+					<a href="#contact" class="text-lg hover:text-cyan-500 duration-500">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!--------------------------- End Navbar  -------------------------------->
+		<!--------------------------- Section One  -------------------------------->
+		<section class="m-8 md:mt-52 mt-48">
+			<div class="max-w-md md:ml-32">
+				<h1 class="md:text-3xl text-2xl text-[#4C3D9F] font-bold">Hi, I’m Novia Marsheila Louisyana</h1>
+				<h1 class="font-bold md:text-5xl text-3xl mb-50px">Frontend Web<br />Enthusiast</h1>
+				<button id="about" class="bg-[#4C3D9F] hover:bg-[#6958C6] py-3 px-4 w-[120px] mt-5 rounded-md"><a href="#contact">See More</a></button>
+			</div>
+		</section>
+		<!---------------------------End Section One  -------------------------------->
+		<!--------------------------- Section Two  -------------------------------->
+
+		<section class="md:mt-56 mt-48">
+			<div class="content-center lg:mx-36 md:mx-20 sm:mx-12">
+				<h1 class="text-center font-semibold text-2xl" data-aos="fade-up" data-aos-delay="500">About Me</h1>
+				<p class="text-center text-slate-300 p-5" data-aos="fade-up" data-aos-delay="700">
+					Hi I am 18 years old. I live in Rembang, Central Java, I really like programming after I graduated from vocational school, so I decided to study informatics engineering
+					at muria kudus university and now I am a second semester student. I,m currently studying web development and web design. I have completed some online training and earned
+					certificates from both free and paid ones.
+				</p>
+			</div>
+		</section>
+		<!---------------------------End Section Two  -------------------------------->
+		<!--------------------------- Section Three  -------------------------------->
+
+		<section class="md:mt-20 mt-28" id="skills" data-aos="fade-right" data-aos-delay="300">
+			<div class="content-center lg:mx-36 md:mx-20 md:m-5 sm:mx-12 bg-[#4C3D9F] rounded-lg">
+				<h1 class="text-center font-semibold text-2xl">Skills</h1>
+				<p class="text-center text-slate-300 p-5">
+					Web Design, User Interface Design, User Experience Design, HTML, CSS, Bootstrap, Javascript, Jquery, React Js, Tailwind, Python, PHP, MySQL
+				</p>
+			</div>
+		</section>
+		<!---------------------------End Section Three  -------------------------------->
+		<!--------------------------- Section Four  -------------------------------->
+		<div class="md:mt-32 mt-24 -z-1">
+			<h1 class="text-center font-semibold text-2xl my-8">Certificate</h1>
+			<div class="swiper mySwiper max-w-3xl max-h-fit">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/certhtml.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certcss.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certjs.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certjquery.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certphp.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certpython.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certrwd.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certui.jpeg" alt="" class="w-full" /></div>
+					<div class="swiper-slide"><img src="images/certux.jpeg" alt="" class="w-full" /></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!---------------------------End Section Four  -------------------------------->
+		<!--------------------------- Section Five  -------------------------------->
+
+		<section class="md:mt-20 mt-28" id="contact">
+			<div class="content-center lg:mx-36 md:mx-20 sm:mx-12" data-aos="fade-left">
+				<h1 class="text-center font-semibold text-2xl">Social Media</h1>
+				<p class="text-center text-slate-300">Click the link below to connect to me</p>
+			</div>
+			<div class="flex md:justify-around justify-start m-7 md:flex-row flex-col">
+				<div class="flex items-center" data-aos="flip-right">
+					<img src="images/iconig.jpeg" alt="" class="w-[35px]" />
+					<a href="https://www.instagram.com/nvvamrsl/" target="_blank" class="ml-2 underline">nvvamrsl</a>
+				</div>
+				<div class="flex items-center" data-aos="flip-right">
+					<img src="images/icongithub.jpeg" alt="" class="w-[35px]" />
+					<a href="https://github.com/noviamarsheila" target="_blank" class="ml-2 underline">noviamarsheila</a>
+				</div>
+				<div class="flex items-center" data-aos="flip-right">
+					<img src="images/iconlinkedin.jpeg" alt="" class="w-[35px]" />
+					<a href="https://id.linkedin.com/in/novia-marsheila-louisyana-984472211" target="_blank" class="ml-2 underline">Novia Marsheila Louisyana</a>
+				</div>
+			</div>
+		</section>
+		<!---------------------------End  Section Five  -------------------------------->
+		<!---------------------------Footer-------------------------------->
+		<hr />
+		<footer>
+			<p class="text-center text-slate-500 py-4">© copyright 2022 - nvvamrsl</p>
+		</footer>
+		<!---------------------------End Footer-------------------------------->
+
+		<!-- script  -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
